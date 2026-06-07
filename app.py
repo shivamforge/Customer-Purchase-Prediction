@@ -221,7 +221,7 @@ if st.button("🚀Predict Purchase"):
 
     prediction = loaded_model.predict(input_data)
 
-    st.progress(float(prediction[0][0]))
+    st.progress(float(prediction[0]))
 
 
     probability = float(prediction[0][0])
